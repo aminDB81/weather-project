@@ -19,8 +19,8 @@ body {
   background-color: #dff9fb;
 }
 
-.cards {
-  width: 90%;
+.cards , .Second-catds {
+  width: 100%;
   max-width: 470px;
   background: rgb(255, 180, 145);
   background: linear-gradient(
@@ -28,8 +28,38 @@ body {
     rgba(255, 180, 145, 1) 6%,
     rgba(229, 218, 255, 1) 100%
   );
-  border-radius: 15px;
+  border-radius: 25px;
   margin: 100px auto 0;
   padding: 40px 35px;
   text-align: center;
+}
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input {
+    border: 0;
+    outline: 0;
+    background: #f5f6fa;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button {
+    border: 0;
+    outline: 0;
+    background: #f5f6fa;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.search button img {
+    
 }
