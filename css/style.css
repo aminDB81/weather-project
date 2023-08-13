@@ -53,8 +53,8 @@ body {
   font-size: 18px;
   transition: all 0.3s;
 }
-.search input:hover{
-    background-color: #ffff;
+.search input:hover {
+  background-color: #ffff;
 }
 .search button {
   border: 0;
@@ -70,14 +70,14 @@ body {
   width: 16px;
 }
 .search button:hover {
-    background-color: #fffa65;
+  background-color: #fffa65;
 }
 .weather-icon {
   width: 170px;
   margin-top: 30px;
 }
 .weather h1 {
-    text-align: center;
+  text-align: center;
   font-size: 80px;
   font-weight: 500;
 }
@@ -112,7 +112,8 @@ body {
   width: 40px;
   margin-right: 10px;
 }
-.humidity , .wind {
-    font-size: 28px;
-    margin-top: -6px;
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
 }
