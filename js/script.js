@@ -8,7 +8,6 @@ const weatherIcon = document.querySelector(".weather-icon");
 const defaultCity = "rio";
 const historyContainer = document.querySelector(".history");
 
-
 searchBox.addEventListener("keyup", (event) => {
     if (event.key === "Enter") {
         checkWeather(searchBox.value);
@@ -122,7 +121,6 @@ function populateHistory() {
         historyContainer.appendChild(historyItem);
     }
 }
-
 function alertVpn() {
     alert("Use a VPN because it uses a specific API");
     alert("Make sure your VPN is connected")
