@@ -7,6 +7,16 @@ const weatherIcon = document.querySelector(".weather-icon");
 const defaultCity = "rio";
 const historyContainer = document.querySelector(".history");
 
+
+searchBox.addEventListener("keyup", (event) => {
+    if (event.key === "Enter") {
+        checkWeather(searchBox.value);
+    }
+});
+
+searchBtn.addEventListener("click", () => {
+    checkWeather(searchBox.value);
+});
 let history = [];
 
 // Load history from local storage
