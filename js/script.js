@@ -6,9 +6,14 @@ const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 const defaultCity = "rio";
 const historyContainer = document.querySelector(".history");
-const maxHistoryItems = 5;
 
 let history = [];
+
+// Load history from local storage
+if (localStorage.getItem("weatherHistory")) {
+    history = JSON.parse(localStorage.getItem("weatherHistory"));
+    populateHistory();
+}
 
 async function checkWeather(city) {
     const response = await fetch(apiUrl + apiKey + `&q=${city}`);
@@ -81,6 +86,28 @@ function updateHistory(city, temp, humidity, wind, condition) {
 
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);
 
+        // Add the city to the history array
         history.unshift({ city, temp, humidity, wind, condition });
+
+        // Store the updated history array in local storage
+        localStorage.setItem("weatherHistory", JSON.stringify(history));
+    }
+}
+
+function populateHistory() {
+    historyContainer.innerHTML = ""; // Clear the history container
+
+    for (const item of history) {
+        const historyItem = document.createElement("div");
+        historyItem.classList.add("history-item");
+        historyItem.innerHTML = `
+            <img src="${getWeatherIcon(item.condition)}" alt="weather icon" class="history-icon">
+            <p class="history-city">${item.city}</p>
+            <p class="history-temp">${item.temp}°C</p>
+            <p class="history-humidity">Humidity : <span class="humidity-value">${item.humidity}%</span></p>
+            <p class="history-wind">Wind : <span class="wind-value">${item.wind} km/h</span></p>
+        `;
+
+        historyContainer.appendChild(historyItem);
     }
 }
