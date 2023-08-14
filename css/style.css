@@ -147,7 +147,7 @@ body {
   color: #eb2f06;
 }
 
-.Second-catds {
+.Second-cards {
   overflow-y: scroll;
 }
 .history p {
@@ -166,11 +166,11 @@ body {
 ::-webkit-scrollbar {
   width: 15px;
 }
-.Second-catds::-webkit-scrollbar-track {
+.Second-cards::-webkit-scrollbar-track {
   background: #d1e5ff;
   border-radius: 15px;
 }
-.Second-catds::-webkit-scrollbar-thumb {
+.Second-cards::-webkit-scrollbar-thumb {
   background: linear-gradient(#642bff, #ff22e6);
   border-radius: 20px;
 }
