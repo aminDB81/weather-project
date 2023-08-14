@@ -1,3 +1,4 @@
+
 const apiKey = "d60db15634e04cac888193305231308";
 const apiUrl = "http://api.weatherapi.com/v1/current.json?key=";
 
@@ -121,3 +122,9 @@ function populateHistory() {
         historyContainer.appendChild(historyItem);
     }
 }
+
+function alertVpn() {
+    alert("Use a VPN because it uses a specific API");
+    alert("Make sure your VPN is connected")
+}
+alertVpn();
