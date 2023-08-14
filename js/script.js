@@ -19,7 +19,7 @@ searchBtn.addEventListener("click", () => {
 });
 let history = [];
 
-// Load history from local storage
+
 if (localStorage.getItem("weatherHistory")) {
     history = JSON.parse(localStorage.getItem("weatherHistory"));
     populateHistory();
