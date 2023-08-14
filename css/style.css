@@ -168,6 +168,7 @@ body {
 }
 .Second-catds::-webkit-scrollbar-track {
   background: #d1e5ff;
+  border-radius: 15px;
 }
 .Second-catds::-webkit-scrollbar-thumb {
   background: linear-gradient(#642bff, #ff22e6);
