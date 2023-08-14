@@ -4,7 +4,7 @@ const apiUrl = "http://api.weatherapi.com/v1/current.json?key=";
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
-const defaultCity = "New York"
+const defaultCity = "rio"
 
 async function checkWeather(city) {
     const response = await fetch(apiUrl + apiKey + `&q=${city}`);
