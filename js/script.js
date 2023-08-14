@@ -75,8 +75,8 @@ function updateHistory(city, temp, humidity, wind, condition) {
             <img src="${getWeatherIcon(condition)}" alt="weather icon" class="history-icon">
             <p class="history-city">${city}</p>
             <p class="history-temp">${temp}°C</p>
-            <p class="history-humidity">Humidity: <span class="humidity-value">${humidity}%</span></p>
-            <p class="history-wind">Wind: <span class="wind-value">${wind} km/h</span></p>
+            <p class="history-humidity">Humidity : <span class="humidity-value">${humidity}%</span></p>
+            <p class="history-wind">Wind : <span class="wind-value">${wind} km/h</span></p>
         `;
 
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);

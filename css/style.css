@@ -152,6 +152,7 @@ body {
 }
 .history p {
   margin-bottom: 0;
+  margin-left: 12px;
 } 
 .history-wind{
   font-weight: bold;
