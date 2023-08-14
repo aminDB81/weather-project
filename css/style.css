@@ -33,6 +33,7 @@ body {
   margin: 100px auto 0;
   padding: 40px 35px;
   text-align: center;
+  max-height: 630px;
 }
 .search {
   width: 100%;
@@ -125,7 +126,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.438);
   padding: 5px;
   border-radius: 10px;
 }
@@ -142,5 +143,22 @@ body {
 
 .history-temp {
   margin-right: 10px;
+  font-weight: bold;
+  color: #eb2f06;
 }
 
+.Second-catds {
+  overflow-y: scroll;
+}
+.history p {
+  margin-bottom: 0;
+} 
+.history-wind{
+  font-weight: bold;
+  color: #833471;
+}
+.history-humidity {
+  font-weight: bold;
+  color: #1e3799;
+
+}
